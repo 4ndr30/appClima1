@@ -8,7 +8,7 @@ let aCelcius = 273.15;
 
 
 document.getElementById('botonBusqueda').addEventListener('click',()=>{
-    const city = document.getElementById('ciudadEntrada').value
+    const city = document.getElementById('ciudadEntrada').value.trim()
     if(city){
         fetchDatosClima(city)
     }
